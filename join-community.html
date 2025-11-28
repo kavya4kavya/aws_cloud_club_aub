@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Cloud Club - Join Community</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <img src="images/bg.png" class="nav-logo-main" alt="AWS Cloud Club Logo">
+        <h4><a href="index.html" class="nav-link">HOME</a></h4>
+        <h4><a href="events.html" class="nav-link">EVENTS</a></h4>
+        <h4><a href="teams.html" class="nav-link">TEAMS</a></h4>
+        <h4><a href="gallery.html" class="nav-link">GALLERY</a></h4>
+        <h4><a href="contact.html" class="nav-link">CONTACT</a></h4>
+        <h4><a href="join-community.html" class="nav-link active">JOIN COMMUNITY</a></h4>
+        <img src="images/banglore_logo.png" class="nav-logo-secondary" alt="Cloud Club Logo">
+        
+        <div class="nav-social-icons">
+            <!-- <a href="https://wa.me/918023456789" target="_blank" class="social-nav-icon">
+                <i class="fab fa-whatsapp"></i> -->
+            </a>
+            <a href="https://www.instagram.com/awscc_aub" target="_blank" class="social-nav-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru" target="_blank" class="social-nav-icon">
+                <i class="fab fa-meetup"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/awscc-aub" target="_blank" class="social-nav-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="events.html">EVENTS</a>
+        <a href="teams.html">TEAMS</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="join-community.html">JOIN COMMUNITY</a>
+        
+        <div class="mobile-social-icons">
+            <a href="https://wa.me/918023456789" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://instagram.com/awscloudclub" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://meetup.com/awscloudclub" target="_blank"><i class="fab fa-meetup"></i> Meetup</a>
+            <a href="https://linkedin.com/company/awscloudclub" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+
+    <div class ="page wrapper">
+    <div class="page-content">
+        <div class="page-header">
+            <h1>JOIN OUR COMMUNITY</h1>
+            <p>Become part of a vibrant community of cloud enthusiasts and accelerate your cloud computing journey.</p>
+        </div>
+        
+        <!-- Benefits Section -->
+        <div style="max-width: 1200px; margin: 0 auto 60px; padding: 0 20px;">
+            <h2 style="font-size: 36px; color: #8452DB; text-align: center; margin-bottom: 40px; font-weight: 800;">Why Join AWS Cloud Club?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="background: linear-gradient(135deg, rgba(132, 82, 219, 0.1), rgba(0, 0, 0, 0.3)); border: 1px solid rgba(132, 82, 219, 0.3); border-radius: 20px; padding: 30px; text-align: center; transition: transform 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">🎓</div>
+                    <h3 style="color: #8452DB; margin-bottom: 15px; font-size: 20px;">Learn from Experts</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">Access to industry professionals and AWS-certified instructors who share real-world insights.</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(132, 82, 219, 0.1), rgba(0, 0, 0, 0.3)); border: 1px solid rgba(132, 82, 219, 0.3); border-radius: 20px; padding: 30px; text-align: center; transition: transform 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">🔗</div>
+                    <h3 style="color: #8452DB; margin-bottom: 15px; font-size: 20px;">Network & Connect</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">Build meaningful connections with like-minded peers and industry professionals.</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(132, 82, 219, 0.1), rgba(0, 0, 0, 0.3)); border: 1px solid rgba(132, 82, 219, 0.3); border-radius: 20px; padding: 30px; text-align: center; transition: transform 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">📜</div>
+                    <h3 style="color: #8452DB; margin-bottom: 15px; font-size: 20px;">Certification Support</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">Preparation materials and guidance for AWS certification exams.</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(132, 82, 219, 0.1), rgba(0, 0, 0, 0.3)); border: 1px solid rgba(132, 82, 219, 0.3); border-radius: 20px; padding: 30px; text-align: center; transition: transform 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">💼</div>
+                    <h3 style="color: #8452DB; margin-bottom: 15px; font-size: 20px;">Career Opportunities</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">Access to internships, job opportunities, and career guidance in cloud computing.</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(132, 82, 219, 0.1), rgba(0, 0, 0, 0.3)); border: 1px solid rgba(132, 82, 219, 0.3); border-radius: 20px; padding: 30px; text-align: center; transition: transform 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">🛠️</div>
+                    <h3 style="color: #8452DB; margin-bottom: 15px; font-size: 20px;">Hands-on Projects</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">Work on real-world cloud projects and build an impressive portfolio.</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(132, 82, 219, 0.1), rgba(0, 0, 0, 0.3)); border: 1px solid rgba(132, 82, 219, 0.3); border-radius: 20px; padding: 30px; text-align: center; transition: transform 0.3s ease;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">🎯</div>
+                    <h3 style="color: #8452DB; margin-bottom: 15px; font-size: 20px;">Exclusive Events</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6;">Priority access to workshops, seminars, and AWS community events.</p>
+                </div>
+            </div>
+          </div>
+        
+
+        <!-- Join Our Team Section -->
+            <div class="team-section">
+                <h2 style="text-align: center; margin-bottom: 30px;">Want to Join Our community?</h2>
+                <div style="text-align: center; background: linear-gradient(135deg, rgba(132, 82, 219, 0.1), rgba(0, 0, 0, 0.3)); border: 1px solid rgba(132, 82, 219, 0.3); border-radius: 20px; padding: 40px; max-width: 600px; margin: 0 auto; transition: transform 0.3s ease;">
+                    <p style="font-size: 18px; margin-bottom: 20px; color: rgba(255, 255, 255, 0.8);">
+                        We're always looking for passionate students to join our team and contribute to the AWS Cloud Club community.
+                    </p>
+                    <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru" target="_blank" class="register-btn" style="display: inline-block; text-decoration: none; color: #fff;">
+                       Join Our Community
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+    <!-- FOOTER WITH SOCIAL ICONS -->
+    <div id="footer">
+    <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+    <div id="f1">
+        <img src="images/bg.png" alt="AWS Cloud Club Logo">
+    </div>
+    <div id="f2">
+        <div class="footer-nav-links">
+            <a href="index.html" class="footer-nav-link">HOME</a>
+            <a href="events.html" class="footer-nav-link">EVENTS</a>
+            <a href="teams.html" class="footer-nav-link">TEAMS</a>
+        </div>
+    </div>
+    <div id="f3">
+        <div class="footer-nav-links">
+            <a href="gallery.html" class="footer-nav-link">GALLERY</a>
+            <a href="contact.html" class="footer-nav-link">CONTACT</a>
+            <a href="join-community.html" class="footer-nav-link">JOIN COMMUNITY</a>
+        </div>
+    </div>
+    <div id="f4">
+        <h4>Designed by AWS CLUB AUB</h4>
+        <h4>AWS Cloud Club</h4>
+        <h4>Amity School of Engineering and Technology</h4>
+        <h4>Bengaluru, Karnataka</h4>
+    </div>
+    <div id="f5">
+        <div class="footer-social-icons-new">
+            <!-- <a href="https://wa.me/918023456789" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-whatsapp"></i> -->
+            </a>
+            <a href="https://www.instagram.com/awscc_aub?igsh=MTV4ajdxZHliZ2ljaw==" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-meetup"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/awscc-aub" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <div id="copyright">
+        <p>&copy; 2025 AWS Cloud Club Bengaluru. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

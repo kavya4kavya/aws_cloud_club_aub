@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Cloud Club - Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="events-page">
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <img src="images/bg.png" class="nav-logo-main" alt="AWS Cloud Club Logo">
+        <h4><a href="index.html" class="nav-link">HOME</a></h4>
+        <h4><a href="events.html" class="nav-link active">EVENTS</a></h4>
+        <h4><a href="teams.html" class="nav-link">TEAMS</a></h4>
+        <h4><a href="gallery.html" class="nav-link">GALLERY</a></h4>
+        <h4><a href="contact.html" class="nav-link">CONTACT</a></h4>
+        <h4><a href="join-community.html" class="nav-link">JOIN COMMUNITY</a></h4>
+        <img src="images/banglore_logo.png" class="nav-logo-secondary" alt="Cloud Club Logo">
+        
+        <div class="nav-social-icons">
+            <!-- <a href="https://wa.me/918023456789" target="_blank" class="social-nav-icon">
+                <i class="fab fa-whatsapp"></i> -->
+            </a>
+            <a href="https://www.instagram.com/awscc_aub" target="_blank" class="social-nav-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru" target="_blank" class="social-nav-icon">
+                <i class="fab fa-meetup"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/awscc-aub" target="_blank" class="social-nav-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="events.html">EVENTS</a>
+        <a href="teams.html">TEAMS</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="join-community.html">JOIN COMMUNITY</a>
+        
+        <div class="mobile-social-icons">
+            <a href="https://wa.me/918023456789" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://instagram.com/awscloudclub" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://meetup.com/awscloudclub" target="_blank"><i class="fab fa-meetup"></i> Meetup</a>
+            <a href="https://linkedin.com/company/awscloudclub" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="page-content">
+            <div class="page-header">
+                <h1>EVENTS</h1>
+                <p>Stay updated with our latest workshops, seminars, and community activities</p>
+            </div>
+
+            <div class="events-container">
+                <!-- Upcoming Events Section -->
+                <section class="event-section">
+                    <h2 class="section-title">UPCOMING EVENTS</h2>
+                    
+                    <div class="no-events-card">
+                        <div class="no-events-content">
+                            <i class="fas fa-calendar-plus"></i>
+                            <h3>No upcoming events. Stay tuned to be informed</h3>
+                            <p>We're planning exciting workshops and seminars. Join our community to get notified first!</p>
+                            <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru"target="_blank" class="register-btn">
+                                <!-- <i class="fas fa-bell"></i> -->
+                                Get Notified
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Past Events Section -->
+                <section class="event-section">
+                    <h2 class="section-title">PAST EVENTS</h2>
+                    
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="images/1754219784649.jpeg" alt="AWS Workshop">
+                            <div class="event-date-badge">
+                               
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3>AWS AUB LAUNCHPAD: INAUGURAL EVENT</h3>
+                            <div class="event-meta">
+                                <p class="event-time"><i class="fas fa-clock"></i> July 30, 2025 | 10:30 AM - 12:30 PM</p>
+                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> Seminar Hall, 4th Floor, Amity University Bengaluru</p>
+                            </div>
+                            <p class="event-description">
+                                The program is oraganized for the formal frlicitation from our geust speaker Mr.Ragvendra Prakash[Senior Sloutions Architect at AWS] were sucessfully formulating carrer strategy in cloud computing.</p>
+                            <div class="event-tags">
+                                <span class="tag">Workshop</span>
+                                <span class="tag">Beginner</span>
+                                <span class="tag">Hands-on</span>
+                            </div>
+                            <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru/events/310077875/" target="_blank" class="register-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Event Details
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Additional Past Event -->
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="images/1760196672028.jpeg" alt="Cloud Security">
+                            <div class="event-date-badge">
+                               
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h3>AI AGENTS : MADE SIMPLE</h3>
+                            <div class="event-meta">
+                                <p class="event-time"><i class="fas fa-clock"></i> October 12, 2025 | 7:30 PM - 9:00 PM</p>
+                                <p class="event-location"><i class="fas fa-map-marker-alt"></i> online google meet</p>
+                            </div>
+                            <p class="event-description">
+                                Deep dive into learning  your cloud infrastructure with industry experts.Session made to Learn about how to make the ai agents .
+                            </p>
+                            <div class="event-tags">
+                                <span class="tag">LLM</span>
+                                <span class="tag">Ai agents</span>
+                                <span class="tag">Gen AI</span>
+                            </div>
+                            <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru/events/311487239/?_xtd=gqFyqTQ0OTc3NjU5NaFwo2FwaQ%253D%253D&from=ref" target="_blank" class="register-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Event Details
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- FOOTER WITH SOCIAL ICONS -->
+    <div id="footer">
+    <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+    <div id="f1">
+        <img src="images/bg.png" alt="AWS Cloud Club Logo">
+    </div>
+    <div id="f2">
+        <div class="footer-nav-links">
+            <a href="index.html" class="footer-nav-link">HOME</a>
+            <a href="events.html" class="footer-nav-link">EVENTS</a>
+            <a href="teams.html" class="footer-nav-link">TEAMS</a>
+        </div>
+    </div>
+    <div id="f3">
+        <div class="footer-nav-links">
+            <a href="gallery.html" class="footer-nav-link">GALLERY</a>
+            <a href="contact.html" class="footer-nav-link">CONTACT</a>
+            <a href="join-community.html" class="footer-nav-link">JOIN COMMUNITY</a>
+        </div>
+    </div>
+    <div id="f4">
+        <h4>Designed by AWS CLOUD CLUB AUB</h4>
+        <h4>AWS Cloud Club</h4>
+        <h4>Amity School of Engineering and Technology</h4>
+        <h4>Bengaluru, Karnataka</h4>
+    </div>
+    <div id="f5">
+        <div class="footer-social-icons-new">
+            <!-- <a href="https://wa.me/918023456789" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-whatsapp"></i> -->
+            </a>
+            <a href="https://www.instagram.com/awscc_aub?igsh=MTV4ajdxZHliZ2ljaw==" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-meetup"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/awscc-aub" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <div id="copyright">
+        <p>&copy; 2025 AWS Cloud Club Bengaluru. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

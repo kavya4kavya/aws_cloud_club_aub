@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Cloud Club - Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <img src="images/bg.png"  class="nav-logo-main" alt="AWS Cloud Club Logo">
+        <h4><a href="index.html" class="nav-link">HOME</a></h4>
+        <h4><a href="events.html" class="nav-link">EVENTS</a></h4>
+        <h4><a href="teams.html" class="nav-link">TEAMS</a></h4>
+        <h4><a href="gallery.html" class="nav-link active">GALLERY</a></h4>
+        <h4><a href="contact.html" class="nav-link">CONTACT</a></h4>
+        <h4><a href="join-community.html" class="nav-link">JOIN COMMUNITY</a></h4>
+        <img src="images/banglore_logo.png" class="nav-logo-secondary" alt="Cloud Club Logo">
+        
+      <div class="nav-social-icons">
+            <!-- <a href="https://wa.me/918023456789" target="_blank" class="social-nav-icon">
+                <i class="fab fa-whatsapp"></i> -->
+            </a>
+            <a href="https://www.instagram.com/awscc_aub" target="_blank" class="social-nav-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru" target="_blank" class="social-nav-icon">
+                <i class="fab fa-meetup"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/awscc-aub" target="_blank" class="social-nav-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="events.html">EVENTS</a>
+        <a href="teams.html">TEAMS</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="join-community.html">JOIN COMMUNITY</a>
+        
+        <div class="mobile-social-icons">
+            <a href="https://wa.me/918023456789" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://instagram.com/awscloudclub" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://meetup.com/awscloudclub" target="_blank"><i class="fab fa-meetup"></i> Meetup</a>
+            <a href="https://linkedin.com/company/awscloudclub" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="page-content">
+            <div class="page-header">
+                <h1>GALLERY</h1>
+                <p>Explore moments from our workshops, seminars, and community events</p>
+            </div>
+
+            <div class="gallery-container">
+                <h2 class="section-title">EVENTS</h2>
+                
+                
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/1754219784649.jpeg" alt="AWS Workshop Session">
+                        <div class="gallery-overlay">
+                            <p class="event-date">Dec 15, 2024</p>
+                            <h4>AWS Fundamentals Workshop</h4>
+                            <p class="event-desc">Students learning cloud basics</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/IMG_1785.HEIC.jpg" alt="Hands-on Lab">
+                        <div class="gallery-overlay">
+                            <p class="event-date">Nov 28, 2024</p>
+                            <h4>Hands-on Lab Session</h4>
+                            <p class="event-desc">Practical cloud computing</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/1754219786117.jpeg" alt="Team Collaboration">
+                        <div class="gallery-overlay">
+                            <p class="event-date">Nov 20, 2024</p>
+                            <h4>Team Collaboration</h4>
+                            <p class="event-desc">Working together on cloud projects</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/1754219781841.jpeg" alt="Expert Talk">
+                        <div class="gallery-overlay">
+                            <p class="event-date">Nov 10, 2024</p>
+                            <h4>Industry Expert Talk</h4>
+                            <p class="event-desc">Cloud Security Best Practices</p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="gallery-item">
+                        <img src="images/IMG_1864.HEIC.jpg" alt="Q&A Session">
+                        <div class="gallery-overlay">
+                            <p class="event-date">Oct 15, 2024</p>
+                            <h4>Interactive Q&A</h4>
+                            <p class="event-desc">Students engaging with speakers</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/1754219788009.jpeg" alt="AWS Student Day">
+                        <div class="gallery-overlay">
+                            <p class="event-date">Oct 5, 2024</p>
+                            <h4>AWS Student Day</h4>
+                            <p class="event-desc">Annual flagship event</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/1754219789463.jpeg" alt="Networking Event">
+                        <div class="gallery-overlay">
+                            <p class="event-date">Sep 28, 2024</p>
+                            <h4>Networking Evening</h4>
+                            <p class="event-desc">Building professional connections</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/1754219783074.jpeg" alt="Hackathon">
+                        <div class="gallery-overlay">
+                            <p class="event-date">Sep 15, 2024</p>
+                            <h4>Cloud Hackathon</h4>
+                            <p class="event-desc">24-hour coding challenge</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/1754219787622.jpeg" alt="Team Meeting">
+                        <div class="gallery-overlay">
+                            <p class="event-date">Sep 10, 2024</p>
+                            <h4>Club Meeting</h4>
+                            <p class="event-desc">Planning upcoming activities</p>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=500&h=300&fit=crop" alt="Study Group">
+                        <div class="gallery-overlay">
+                            <p class="event-date">Aug 25, 2024</p>
+                            <h4>Study Group</h4>
+                            <p class="event-desc">Preparing for AWS certifications</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=500&h=300&fit=crop" alt="Social Gathering">
+                        <div class="gallery-overlay">
+                            <p class="event-date">Aug 15, 2024</p>
+                            <h4>Community Gathering</h4>
+                            <p class="event-desc">Celebrating achievements</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- FOOTER WITH SOCIAL ICONS -->
+    <div id="footer">
+    <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+    <div id="f1">
+        <img src="images/bg.png" alt="AWS Cloud Club Logo">
+    </div>
+    <div id="f2">
+        <div class="footer-nav-links">
+            <a href="index.html" class="footer-nav-link">HOME</a>
+            <a href="events.html" class="footer-nav-link">EVENTS</a>
+            <a href="teams.html" class="footer-nav-link">TEAMS</a>
+        </div>
+    </div>
+    <div id="f3">
+        <div class="footer-nav-links">
+            <a href="gallery.html" class="footer-nav-link">GALLERY</a>
+            <a href="contact.html" class="footer-nav-link">CONTACT</a>
+            <a href="join-community.html" class="footer-nav-link">JOIN COMMUNITY</a>
+        </div>
+    </div>
+    <div id="f4">
+        <h4>AWS Cloud Club</h4>
+        <h4>Amity School of Engineering and Technology</h4>
+        <h4>Bengaluru, Karnataka</h4>
+    </div>
+    <div id="f5">
+        <div class="footer-social-icons-new">
+            <!-- <a href="https://wa.me/918023456789" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-whatsapp"></i> -->
+            </a>
+            <a href="https://www.instagram.com/awscc_aub?igsh=MTV4ajdxZHliZ2ljaw==" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-meetup"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/awscc-aub" target="_blank" class="footer-social-icon-new">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <div id="copyright">
+        <p>&copy; 2025 AWS Cloud Club Bengaluru. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
