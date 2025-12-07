@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS CLOUD CLUB</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <div id="nav">
+        <img src="images/bg.png" class="nav-logo-main" alt="AWS Cloud Club Logo">
+
+        <h4><a href="index.html" class="nav-link active">HOME</a></h4>
+        <h4><a href="events.html" class="nav-link">EVENTS</a></h4>
+        <h4><a href="teams.html" class="nav-link">TEAMS</a></h4>
+        <h4><a href="gallery.html" class="nav-link">GALLERY</a></h4>
+        <h4><a href="contact.html" class="nav-link">CONTACT</a></h4>
+        <h4><a href="join-community.html" class="nav-link">JOIN COMMUNITY</a></h4>
+
+        <img src="images/banglore_logo.png" class="nav-logo-secondary" alt="Bengaluru Logo">
+
+        <div class="nav-social-icons">
+            <a href="https://www.instagram.com/awscc_aub" target="_blank" class="social-nav-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru" target="_blank" class="social-nav-icon">
+                <i class="fab fa-meetup"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/awscc-aub" target="_blank" class="social-nav-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="events.html">EVENTS</a>
+        <a href="teams.html">TEAMS</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="join-community.html">JOIN COMMUNITY</a>
+
+        <div class="mobile-social-icons">
+            <a href="https://www.instagram.com/awscc_aub" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru" target="_blank"><i class="fab fa-meetup"></i> Meetup</a>
+            <a href="https://www.linkedin.com/in/awscc-aub" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <video autoplay loop muted playsinline>
+        <source src="videos.mp4" type="video/mp4">
+    </video>
+
+    <div id="main">
+        <div id="page1">
+            <h1>AWS CLOUD CLUB</h1>
+            <h2>Amity School of Engineering and Technology</h2>
+            <h3>Bengaluru, Karnataka, India</h3>
+            <p>Welcome to the AWS Cloud Club at Amity School of Engineering and Technology, Bengaluru. Join our community to explore cloud computing, build hands-on projects, and grow in a space filled with passionate students and innovators.</p>
+        </div>
+
+        <div id="page2">
+            <div id="scroller">
+                <div id="scroller-in">
+                    <h4>Architect</h4>
+                    <h4>DevOps</h4>
+                    <h4>Security</h4>
+                    <h4>Developer</h4>
+                    <h4>Operations</h4>
+                </div>
+                <div id="scroller-in">
+                    <h4>Architect</h4>
+                    <h4>DevOps</h4>
+                    <h4>Security</h4>
+                    <h4>Developer</h4>
+                    <h4>Operations</h4>
+                </div>
+            </div>
+
+            <div id="about-us">
+                <img src="images/bg.png" alt="AWS Cloud Club Logo">
+
+                <div id="about-us-in">
+                    <h3>About Us</h3>
+                    <p>
+                        AWS Cloud Club AUB is a student-led cloud community at Amity University Bengaluru.  
+                        We focus on hands-on learning, real AWS experience, and a collaborative culture where
+                        students build, innovate, and upskill together.
+                    </p>
+                </div>
+
+                <img src="images/aub.png" alt="Amity University Logo">
+            </div>
+
+            <div id="benefits-container">
+                <h2 style="font-size: 40px; color: #fff; text-align: center; margin-bottom: 40px; font-weight: 800; text-transform: uppercase;">
+                    Benefits of Joining
+                </h2>
+
+                <div class="benefits-grid">
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Networking Opportunities</h3>
+                        <p>Connect with cloud learners, mentors, and industry professionals.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Hands-on Workshops</h3>
+                        <p>Experience AWS through guided labs, demos, and real projects.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certification Support</h3>
+                        <p>Learn, prepare, and grow with the help of peers and curated resources.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="green-div">
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+                <h4>"The best way to predict the future is to create it." - Peter Drucker</h4>
+                <img class="rotate-image" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+            </div>
+        </div>
+
+        <div id="page3">
+            <p>
+                AWS Cloud Club AUB brings students together to explore cloud technology through workshops,
+                talks, and hands-on projects. We grow by building, sharing, and learning as a team.
+            </p>
+
+            <img id="colon1" src="images/unnamed__1_-removebg-preview - Copy.png" alt="">
+            <img id="colon2" src="images/unnamed__1_-removebg-preview.png" alt="">
+
+            <a href="https://aws.amazon.com/" target="_blank" class="learn-more-btn">
+                LEARN MORE ABOUT AWS
+            </a>
+        </div>
+
+        <div id="page4">
+            <h1>WHAT ARE YOU WAITING FOR?</h1>
+
+            <div class="benefits-grid">
+
+                <a href="teams.html" class="benefit-card-link">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>OUR TEAM</h3>
+                    </div>
+                </a>
+
+                <a href="events.html" class="benefit-card-link">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>OUR EVENTS</h3>
+                    </div>
+                </a>
+
+                <a href="join-community.html" class="benefit-card-link">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>JOIN OUR COMMUNITY</h3>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+
+            <div id="f1">
+                <img src="images/bg.png" alt="AWS Cloud Club Logo">
+            </div>
+
+            <div id="f2">
+                <div class="footer-nav-links">
+                    <a href="index.html" class="footer-nav-link">HOME</a>
+                    <a href="events.html" class="footer-nav-link">EVENTS</a>
+                    <a href="teams.html" class="footer-nav-link">TEAMS</a>
+                </div>
+            </div>
+
+            <div id="f3">
+                <div class="footer-nav-links">
+                    <a href="gallery.html" class="footer-nav-link">GALLERY</a>
+                    <a href="contact.html" class="footer-nav-link">CONTACT</a>
+                    <a href="join-community.html" class="footer-nav-link">JOIN COMMUNITY</a>
+                </div>
+            </div>
+
+            <div id="f4">
+                <h4>Designed by AWS Cloud Club AUB</h4>
+                <h4>AWS Cloud Club</h4>
+                <h4>Amity School of Engineering and Technology</h4>
+                <h4>Bengaluru, Karnataka</h4>
+            </div>
+
+            <div id="f5">
+                <div class="footer-social-icons-new">
+                    <a href="https://www.instagram.com/awscc_aub" target="_blank" class="footer-social-icon-new">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.meetup.com/aws-cloud-club-at-amity-university-bengaluru" target="_blank" class="footer-social-icon-new">
+                        <i class="fab fa-meetup"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/awscc-aub" target="_blank" class="footer-social-icon-new">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p>&copy; 2025 AWS Cloud Club Bengaluru. All rights reserved.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

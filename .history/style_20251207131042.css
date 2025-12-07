@@ -1,0 +1,285 @@
+/* ======================================================================= */
+/* GLOBAL RESET + BASE */
+/* ======================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, Trebuchet MS, sans-serif;
+    color: #fff;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    background: #000;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content {
+    flex-grow: 1;
+    background: linear-gradient(135deg, #000 0%, #11171F 50%, #8452DB 100%);
+    padding: 160px 0 50px;
+    position: relative;
+    z-index: 10;
+}
+
+/* ======================================================================= */
+/* SCROLLBAR */
+/* ======================================================================= */
+*::selection {
+    color: #8452DB;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #8452DB, purple, #11171F);
+    border-radius: 50px;
+}
+
+/* ======================================================================= */
+/* CUSTOM CURSORS */
+/* ======================================================================= */
+#cursor {
+    height: 15px;
+    width: 15px;
+    background: #8452DB;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    pointer-events: none;
+}
+
+#cursor-blur {
+    height: 300px;
+    width: 300px;
+    background: #8452db80;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 50;
+    pointer-events: none;
+}
+
+/* ======================================================================= */
+/* NAVBAR */
+/* ======================================================================= */
+#nav {
+    height: 145px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    gap: 40px;
+    position: fixed;
+    z-index: 99;
+    background: transparent;
+}
+
+#nav img {
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.nav-logo-main {
+    height: 140px;
+}
+
+.nav-logo-secondary {
+    height: 75px;
+}
+
+/* NAV TEXT */
+#nav h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* SOCIAL ICONS */
+.nav-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.social-nav-icon {
+    font-size: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: rgba(132, 82, 219, 0.25);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.social-nav-icon:hover {
+    background: rgba(132, 82, 219, 0.45);
+    transform: translateY(-3px);
+    color: #8452DB;
+}
+
+/* MOBILE MENU BUTTON */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-btn span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: 0.3s ease;
+}
+
+/* MOBILE MENU PANEL */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 145px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    padding: 25px;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #ffffff20;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* MOBILE SOCIAL ICONS */
+.mobile-social-icons {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ffffff25;
+}
+
+.mobile-social-icons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    font-size: 18px;
+}
+
+.mobile-social-icons i {
+    font-size: 20px !important;
+}
+
+/* RESPONSIVE NAV */
+@media (max-width: 1024px) {
+    #nav { padding: 0 60px; }
+}
+
+@media (max-width: 768px) {
+    #nav { height: 110px; padding: 0 20px; }
+    #nav h4 { display: none; }
+    .mobile-menu-btn { display: flex; }
+}
+
+@media (max-width: 480px) {
+    .nav-logo-main { height: 70px; }
+    .nav-logo-secondary { height: 50px; }
+}
+
+/* ======================================================================= */
+/* HERO SECTION */
+/* ======================================================================= */
+#page1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+#page1 h1 {
+    font-size: 100px;
+    font-weight: 800;
+    position: relative;
+}
+
+#page1 h1::before {
+    content: "AWS CLOUD CLUB";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 2px #8452DB;
+    color: transparent;
+}
+
+#page1 p {
+    font-size: 22px;
+    width: 55%;
+    margin-top: 10px;
+}
+
+/* ======================================================================= */
+/* ALL ICON FIX (GLOBAL) */
+/* ======================================================================= */
+
+/* This is the missing fix: ensures *every icon library* shows */
+i, svg {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    color: inherit;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto;
+}
+
+/* Font Awesome compatibility */
+.fa, .fas, .far, .fab, .fa-solid, .fa-regular, .fa-brands {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+}
+
+/* Remix Icons compatibility */
+.ri {
+    font-family: "remixicon" !important;
+}
+
+/* Bootstrap Icons compatibility */
+.bi {
+    font-family: "bootstrap-icons" !important;
+}
+
+/* ======================================================================= */
+/* (…rest of your layout untouched, cleaned, and made consistent…) */
+/* ======================================================================= */

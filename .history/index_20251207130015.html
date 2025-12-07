@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS Cloud Club | Amity University Bengaluru</title>
+
+    <!-- Correct Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Correct CSS Path -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="AWS Cloud Club Logo">
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="join-community.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <video autoplay muted loop class="bg-video">
+            <source src="videos.mp4" type="video/mp4" />
+        </video>
+
+        <div class="hero-text">
+            <h1>Welcome to AWS Cloud Club</h1>
+            <p>Your tech community at Amity University Bengaluru — learning, building, and growing together.</p>
+            <a href="join-community.html" class="btn">Join the Club</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>
+            We’re a student-led cloud community where we explore AWS services, build hands-on projects,
+            conduct workshops, and help each other grow in tech. Zero pressure — just curiosity, teamwork,
+            and real learning.
+        </p>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits">
+        <h2>Why Join?</h2>
+
+        <div class="benefit-grid">
+            <div class="benefit-card">
+                <i class="fas fa-cloud"></i>
+                <h3>Learn Cloud Computing</h3>
+                <p>AWS, DevOps, containers, automation — everything you want to grow in the cloud world.</p>
+            </div>
+
+            <div class="benefit-card">
+                <i class="fas fa-users"></i>
+                <h3>Meet Great People</h3>
+                <p>Join a community that supports you, collaborates with you, and builds with you.</p>
+            </div>
+
+            <div class="benefit-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Hands-On Projects</h3>
+                <p>Not just theory — we make things. Deploy apps, create demos, and experiment freely.</p>
+            </div>
+
+            <div class="benefit-card">
+                <i class="fas fa-calendar"></i>
+                <h3>Workshops & Events</h3>
+                <p>Tech talks, hackathons, cloud meetups, and more throughout the year.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <h3>AWS Cloud Club — AUB</h3>
+
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+            <p>© 2025 AWS Cloud Club — Amity University Bengaluru</p>
+        </div>
+    </footer>
+
+    <!-- Correct JS path -->
+    <script src="script.js"></script>
+
+</body>
+</html>
