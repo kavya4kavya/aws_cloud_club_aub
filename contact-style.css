@@ -1,0 +1,86 @@
+/* contact-style.css - Specific styles for Contact Page & Modal */
+
+/* --- Fix for Contact Page Layout --- */
+/* Ensures the main container doesn't collapse or overlap */
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Keeps it below the modal */
+}
+
+/* --- Message Success Modal Styles --- */
+
+/* The Modal Backdrop: Overlays the entire screen */
+#successModal.modal {
+    display: none; /* MUST be hidden by default */
+    position: fixed;
+    z-index: 9999; /* Higher z-index to guarantee it's on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85); /* Dark semi-transparent background */
+    backdrop-filter: blur(5px);
+}
+
+/* The Content Box: The pop-up itself */
+#successModal .modal-content {
+    background-color: #111111; /* Very dark background */
+    color: #ffffff;
+    margin: 15% auto; /* Centers the box vertically */
+    padding: 35px;
+    border: 3px solid #ff9900; /* AWS Orange border */
+    width: 90%; 
+    max-width: 400px; /* Keep it compact */
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.7);
+    /* Initial state for animation */
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+/* Final state when modal is displayed (controlled by JS) */
+#successModal.modal.show .modal-content {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#successModal .modal-icon {
+    font-size: 60px;
+    color: #4CAF50; /* Green success checkmark */
+    margin-bottom: 15px;
+}
+
+#successModal .modal-content h2 {
+    font-size: 1.6em;
+    color: #ff9900;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#successModal .modal-content p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #cccccc;
+}
+
+#successModal .close-btn {
+    position: absolute; /* Allows for absolute positioning inside the fixed modal */
+    top: 10px;
+    right: 15px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#successModal .close-btn:hover {
+    color: #ff9900;
+}
